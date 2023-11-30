@@ -1,0 +1,60 @@
+/* Imports */
+@font-face {
+    font-family: 'Outfit';
+    src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url(./fonts/static/Outfit-Bold.ttf);
+}
+
+/* Global Variables */
+:root {
+    --light-grey: hsl(212, 45%, 89%); /* Background */
+    --dark-blue: hsl(218, 44%, 22%); /* Header */
+    --greyish-blue: hsl(220, 15%, 55%); /* Text */
+}
+
+/* Defaults */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--light-grey);
+}
+
+/* QR code component */
+.component {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.component > * {
+    margin-bottom: 15px;
+}
+.qr-code-image {
+    max-width: 100%;
+    border-radius: inherit;
+}
+.component-header,
+.component-text {
+    padding-inline: 15px;
+    text-align: center;
+}
+.component-header {
+    font-family: 'Outfit Bold';
+}
+.component-text {
+    font-family: 'Outfit';
+    color: var(--greyish-blue);
+}
