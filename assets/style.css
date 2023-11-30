@@ -1,11 +1,11 @@
 /* Imports */
 @font-face {
     font-family: 'Outfit';
-    src: url(./fonts/Outfit-VariableFont_wght.ttf);
+    src: url(./Fonts/Outfit-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: 'Outfit Bold';
-    src: url(./fonts/static/Outfit-Bold.ttf);
+    src: url(./Fonts/static/Outfit-Bold.ttf);
 }
 
 /* Global Variables */
